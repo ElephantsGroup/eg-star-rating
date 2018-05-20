@@ -6,7 +6,7 @@ Installation Steps:
 1) run
 > php composer.phar require elephantsgroup/eg-star-rating "*"
 
-or add `"elephantsgroup/eg-star-rating": "*"` to the require section of your composer.json file.
+or add `"elephantsgroup/eg-star-rating": "~1"` to the require section of your composer.json file.
 
 2) migrate database
 > yii migrate --migrationPath=vendor/elephantsgroup/eg-star-rating/migrations
@@ -59,7 +59,7 @@ Anywhere in your code you can use star-rating widget as follows:
 ```<?= Rate::widget() ?>```
 
 You need to use Rate widget header in your page:
-```use elephantsGroup\star-rating\components\Rate;```
+```use elephantsGroup\starRating\components\Rate;```
 
 Rate widget parameters
 ---
