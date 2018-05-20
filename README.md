@@ -4,12 +4,12 @@ Installation Steps:
 ===
 
 1) run
-> php composer.phar require elephantsgroup/yii2-star-rating "*"
+> php composer.phar require elephantsgroup/eg-star-rating "*"
 
-or add `"elephantsgroup/yii2-star-rating": "*"` to the require section of your composer.json file.
+or add `"elephantsgroup/eg-star-rating": "*"` to the require section of your composer.json file.
 
 2) migrate database
-> yii migrate --migrationPath=vendor/elephantsgroup/yii2-star-rating/migrations
+> yii migrate --migrationPath=vendor/elephantsgroup/eg-star-rating/migrations
 
 3) add star-rating module to common configuration (common/config.php file)
 

@@ -18,7 +18,7 @@ use yii\web\JqueryAsset;
  */
 class RatingAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/elephantsgroup/yii2-star-rating/assets';
+    public $sourcePath = '@vendor/elephantsgroup/eg-star-rating/assets';
    
     public function init() {
         $this->jsOptions['position'] = View::POS_END;
