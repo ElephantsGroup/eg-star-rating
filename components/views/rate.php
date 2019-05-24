@@ -4,7 +4,7 @@ use elephantsGroup\starRating\assets\RatingAsset;
 use yii\web\View;
 
 RatingAsset::register($this);
-$module = \Yii::$app->getModule('rating');
+$module = \Yii::$app->getModule('star-rating');
 ?>
 <div class="row" id="star-rating<?= $item ?>" >
     <?php for ($i = $min_num; $i <= $max_num; $i++ ):?>
@@ -14,7 +14,7 @@ $module = \Yii::$app->getModule('rating');
 
 <?php
 $script = "$(function(){\$('#star-rating$item').rating(function(vote, event){
-        post_rate('" . Yii::getAlias('@web') . "/star-rating/ajax/vote', '" . Yii::$app->request->csrfToken . "', $service, $item, vote);
+        post_rate('" . Yii::getAlias('@web') . $module->vote_path . "', '" . Yii::$app->request->csrfToken . "', $service, $item, vote);
     }, 3);
 });";
 $this->registerJs($script, View::POS_END);

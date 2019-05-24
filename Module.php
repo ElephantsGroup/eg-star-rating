@@ -13,6 +13,7 @@ use Yii;
 
 class Module extends \yii\base\Module
 {
+    public $vote_path = '/star-rating/ajax/vote';
     // public $defaultRoute = 'admin';
     // make a problem, when is not logged and request like url, it asks for username and passwrod, then
     // visitor know this action exists but not allowed
